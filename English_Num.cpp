@@ -5,7 +5,7 @@ using namespace std;
 
 
 //Add a string
-string addString(string str, string add)
+string AddString(string str, string add)
 {
 	
 	string s="";
@@ -26,7 +26,7 @@ string addString(string str, string add)
 }
 
 //Convert the hundredth terms into the corresponding letters
-string hunDigToLetter(string str, int num)
+string HunderedDigitToLetter(string str, int num)
 {
 	int r;
 	r=num%10;
@@ -36,31 +36,31 @@ string hunDigToLetter(string str, int num)
 		switch (r)
 			{	
 				case 1:
-					str= addString(str , "One");
+					str= AddString(str , "One");
 					break;
 				case 2:
-					str= addString(str , "Two");
+					str= AddString(str , "Two");
 					break;
 				case 3:
-					str= addString(str , "Three");
+					str= AddString(str , "Three");
 					break;
 				case 4:
-					str= addString(str , "Four");
+					str= AddString(str , "Four");
 					break;
 				case 5:
-					str= addString(str , "Five");
+					str= AddString(str , "Five");
 					break;
 				case 6:
-					str= addString(str , "Six");
+					str= AddString(str , "Six");
 					break;
 				case 7:
-					str= addString(str , "Seven");
+					str= AddString(str , "Seven");
 					break;
 				case 8:
-					str= addString(str , "Eight");
+					str= AddString(str , "Eight");
 					break;
 				case 9:
-					str= addString(str , "Nine");
+					str= AddString(str , "Nine");
 					break;
 				default:
 					break;
@@ -79,35 +79,35 @@ string onesDigToLetter(string str, int num)
 				switch (r)
 			{
 				case 0:
-					str= addString(str , "Ten");
+					str= AddString(str , "Ten");
 					break;
 					
 				case 1:
-					str= addString(str , "Eleven");
+					str= AddString(str , "Eleven");
 					break;
 				case 2:
-					str= addString(str , "Twelve");
+					str= AddString(str , "Twelve");
 					break;
 				case 3:
-					str= addString(str , "Thirteen");
+					str= AddString(str , "Thirteen");
 					break;
 				case 4:
-					str= addString(str , "Fourteen");
+					str= AddString(str , "Fourteen");
 					break;
 				case 5:
-					str= addString(str , "Fifteen");
+					str= AddString(str , "Fifteen");
 					break;
 				case 6:
-					str= addString(str , "Sixteen");
+					str= AddString(str , "Sixteen");
 					break;
 				case 7:
-					str= addString(str , "Seventeen");
+					str= AddString(str , "Seventeen");
 					break;
 				case 8:
-					str= addString(str , "Eighteen");
+					str= AddString(str , "Eighteen");
 					break;
 				case 9:
-					str= addString(str , "Nineteen");
+					str= AddString(str , "Nineteen");
 					break;
 				default:
 					break;
@@ -119,31 +119,31 @@ string onesDigToLetter(string str, int num)
 			switch (r)
 			{	
 				case 1:
-					str= addString(str , "One");
+					str= AddString(str , "One");
 					break;
 				case 2:
-					str= addString(str , "Two");
+					str= AddString(str , "Two");
 					break;
 				case 3:
-					str= addString(str , "Three");
+					str= AddString(str , "Three");
 					break;
 				case 4:
-					str= addString(str , "Four");
+					str= AddString(str , "Four");
 					break;
 				case 5:
-					str= addString(str , "Five");
+					str= AddString(str , "Five");
 					break;
 				case 6:
-					str= addString(str , "Six");
+					str= AddString(str , "Six");
 					break;
 				case 7:
-					str= addString(str , "Seven");
+					str= AddString(str , "Seven");
 					break;
 				case 8:
-					str= addString(str , "Eight");
+					str= AddString(str , "Eight");
 					break;
 				case 9:
-					str= addString(str , "Nine");
+					str= AddString(str , "Nine");
 					break;
 				default:
 					break;
@@ -161,28 +161,28 @@ string tensDigToLetter(string str, int num)
 				switch (r)
 				{
 				case 2:
-					str= addString(str , "Twenty");
+					str= AddString(str , "Twenty");
 					break;
 				case 3:
-					str= addString(str , "Thirty");
+					str= AddString(str , "Thirty");
 					break;
 				case 4:
-					str= addString(str , "Forty");
+					str= AddString(str , "Forty");
 					break;
 				case 5:
-					str= addString(str , "Fifty");
+					str= AddString(str , "Fifty");
 					break;
 				case 6:
-					str= addString(str , "Sixty");
+					str= AddString(str , "Sixty");
 					break;
 				case 7:
-					str= addString(str , "Seventy");
+					str= AddString(str , "Seventy");
 					break;
 				case 8:
-					str= addString(str , "Eighty");
+					str= AddString(str , "Eighty");
 					break;
 				case 9:
-					str= addString(str , "Ninety");
+					str= AddString(str , "Ninety");
 					break;
 				default:
 					break;
@@ -218,7 +218,7 @@ int main ()
 					if(num%10!=0)	
 					{
 							
-						str = hunDigToLetter( str, num);
+						str = HunderedDigitToLetter( str, num);
 					}
 				}
 			
@@ -240,7 +240,7 @@ int main ()
 								}
 								if(i==5)
 								{
-									str = hunDigToLetter( str, num);						
+									str = HunderedDigitToLetter( str, num);						
 								}
 								num=num/10;
 							}
@@ -266,7 +266,7 @@ int main ()
 								}
 								if(i==8)
 								{
-									str = hunDigToLetter( str, num);								
+									str = HunderedDigitToLetter( str, num);								
 								}
 								num=num/10;
 							}
@@ -293,7 +293,7 @@ int main ()
 									}
 									if(i==11)
 									{
-										str = hunDigToLetter( str, num);								
+										str = HunderedDigitToLetter( str, num);								
 									}
 									num=num/10;
 								}
@@ -318,7 +318,7 @@ int main ()
 											}
 											if(i==14)
 											{
-												str = hunDigToLetter( str, num);											
+												str = HunderedDigitToLetter( str, num);											
 											}
 											num=num/10;
 										}
