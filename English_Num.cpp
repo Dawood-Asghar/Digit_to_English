@@ -33,37 +33,34 @@ string HunderedDigitToLetter(string str, int num)
 	if(r!=0)
 	{
 		str = addString( str,  "Hundred");
-		switch (r)
-			{	
-				case 1:
+		
+				if (r == 1)
 					str= AddString(str , "One");
-					break;
-				case 2:
+		
+				else if (r == 2)
 					str= AddString(str , "Two");
-					break;
-				case 3:
+				
+				else if (r == 3)
 					str= AddString(str , "Three");
-					break;
-				case 4:
+				
+				else if (r == 4)
 					str= AddString(str , "Four");
-					break;
-				case 5:
+					
+				else if (r == 5)
 					str= AddString(str , "Five");
-					break;
-				case 6:
+					
+				else if (r == 6)
 					str= AddString(str , "Six");
-					break;
-				case 7:
+					
+				else if (r == 6)
 					str= AddString(str , "Seven");
-					break;
-				case 8:
+					
+				else if (r == 7)
 					str= AddString(str , "Eight");
-					break;
-				case 9:
+					
+				else if (r == 8)
 					str= AddString(str , "Nine");
-					break;
-				default:
-					break;
+	
 			}
 		}
 		return str;
