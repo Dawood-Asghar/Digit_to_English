@@ -32,7 +32,7 @@ string HunderedDigitToLetter(string str, int num)
 	r=num%10;
 	if(r!=0)
 	{
-		str = addString( str,  "Hundred");
+		str = AddString( str,  "Hundred");
 		
 				if (r == 1)
 					str= AddString(str , "One");
@@ -62,7 +62,6 @@ string HunderedDigitToLetter(string str, int num)
 					str= AddString(str , "Nine");
 	
 			}
-		}
 		return str;
 }
 
@@ -223,7 +222,7 @@ int main ()
 					{
 						if(num%1000!=0)
 						{						
-							str = addString( str,  "Thousand");
+							str = AddString( str,  "Thousand");
 							for(i;num!=0 && i<=5;i++)
 							{		
 
@@ -249,7 +248,7 @@ int main ()
 							if(num%1000!=0)
 							{
 							
-							str = addString( str,  "Million");
+							str = AddString( str,  "Million");
 							for(i;num!=0 && i<=8;i++)
 							{			
 
@@ -276,7 +275,7 @@ int main ()
 								if(num%1000!=0)
 								{
 								
-								str = addString( str,  "Billion");
+								str = AddString( str,  "Billion");
 								for(i;num!=0 && i<=11;i++)
 								{			
 
@@ -301,7 +300,7 @@ int main ()
 									if(i==12)
 									{
 										
-										str = addString( str,  "Trillion");
+										str = AddString( str,  "Trillion");
 										for(i;num!=0 && i<=14;i++)
 										{		
 
